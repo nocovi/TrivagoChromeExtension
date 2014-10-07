@@ -1,4 +1,4 @@
-TrivagoCrhoomeExtension
+TrivagoCrhomeExtension
 =======================
 
-Shows Trivago search results as navigable carousel
+Shows Trivago search results as navigable carousel.
