@@ -1,0 +1,69 @@
+/* override trivago styles */
+.itemlist .item:first-child {
+    border-bottom: 0 !important;
+    border-top: 0 !important;
+    padding-top: 0 !important;
+}
+.itemlist .item {
+    border-bottom: 0 !important;
+    border-top: 0 !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+	width:auto !important;
+}
+/* itemlist sytles */
+#js_itemlist {
+	float: left !important;
+	list-style: none;
+	min-height:200px;
+	display: inline !important;
+	}
+
+#js_itemlist > li {
+	position: absolute;
+}
+
+#js_itemlist > li:not(.current) {
+	display: none;
+}
+
+#js_itemlist > li.next-in {
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+#js_itemlist > li.next-out {
+	avisibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 2s, opacity 2s linear;
+	transform: translateX(80%);
+}
+
+#js_itemlist > li.prev-in {
+	opacity: 1;
+	transition: opacity 2s linear;
+}
+
+#js_itemlist > li.prev-out {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 2s, opacity 2s linear;
+	transform: translateX(-80%);
+}
+
+.carousel-nav.prev {
+    float: left;
+    width: 6%;
+    display: inline;
+	padding-top: 5%;
+    
+}
+.carousel-nav.next {
+    float: right;
+    width: 6%;
+    display: inline;
+	padding-top: 5%;
+}
+#container_itemlist {
+	width:100%
+}

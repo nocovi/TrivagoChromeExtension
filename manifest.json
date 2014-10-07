@@ -1,0 +1,26 @@
+{
+  "name": "Trivago Hack",
+  "description": "Make results list appear as carousel manipulating DOM when page is loaded",
+  "version": "2.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+	"name": "Trivago Carousel",
+	"icons": ["icon.png"],
+	"default_icon" : "icon.png"
+  },
+  "permissions": [
+          "webRequest",
+          "*://*.google.com/"
+  ],
+  "content_scripts": [{
+	"js":["jquery-1.11.1.min.js", "mutation-summary.js", "trivagoExt.js"],
+	"css":["styles.css"],
+	"matches": ["*://www.trivago.com/*","*://www.trivago.es/*"]
+  }],
+  "web_accessible_resources": [
+       "images/*.png"
+   ],
+  "manifest_version": 2
+}
