@@ -1,6 +1,5 @@
-//add new css classes and change min height for itemlist (too big)
-$( '#js_itemlist' ).css('min-height','200px');
-
+$('#js_itemlist' ).before('<div id="itemlist_div"></div>');
+$('#js_itemlist').appendTo('#itemlist_div');
 //add navigation links
 $( '#js_itemlist' ).before('<a id="goBack" href="#" class="carousel-nav prev"></a>');
 $( '#js_itemlist' ).after('<a id="goFW" href="#" class="carousel-nav next"></a>');
@@ -23,8 +22,7 @@ itemCount    = $('#js_itemlist > li').length;
 $(function() {
 	/* add the current class to the first item to hide all the others */
 	$('#js_itemlist> li:eq(' + currentIndex + ')').addClass('current');
-	$('.carousel-nav').on('click', navigate);
-	
+	$('.carousel-nav ').on('click', navigate);
 });
 	var observer = new MutationSummary({
 		callback: handleChanges,

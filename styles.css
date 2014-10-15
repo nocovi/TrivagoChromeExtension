@@ -1,4 +1,14 @@
-/* override trivago styles */
+#container_itemlist {
+	width:100%
+}
+/* ITEMLIST CONTAINER */
+#itemlist_div {
+	width:700px;
+	position:absolute;
+	}
+
+/* ITEMLIST */
+/** override trivago list item styles **/
 .itemlist .item:first-child {
     border-bottom: 0 !important;
     border-top: 0 !important;
@@ -11,12 +21,12 @@
     padding: 0 !important;
 	width:auto !important;
 }
-/* itemlist sytles */
+/** set custom itemlist and itemlist item styles **/
 #js_itemlist {
-	float: left !important;
 	list-style: none;
-	min-height:200px;
+	min-height:125px !important;
 	display: inline !important;
+	float:left;
 	}
 
 #js_itemlist > li {
@@ -33,7 +43,7 @@
 }
 
 #js_itemlist > li.next-out {
-	avisibility: hidden;
+	visibility: hidden;
 	opacity: 0;
 	transition: visibility 0s 2s, opacity 2s linear;
 	transform: translateX(80%);
@@ -51,19 +61,20 @@
 	transform: translateX(-80%);
 }
 
+/* CAROUSEL NAVIGATION */ 
 .carousel-nav.prev {
-    float: left;
+	float: left;
     width: 6%;
     display: inline;
-	padding-top: 5%;
+	margin-top: 5%;
     
 }
 .carousel-nav.next {
-    float: right;
+	float: right;
     width: 6%;
     display: inline;
-	padding-top: 5%;
+	margin-top: 5%;
 }
-#container_itemlist {
-	width:100%
+#goBack .img {
+	width: 80%;
 }
