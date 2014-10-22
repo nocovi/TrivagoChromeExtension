@@ -4,7 +4,7 @@
 /* ITEMLIST CONTAINER */
 #itemlist_div {
 	width:700px;
-	position:absolute;
+	position:relative;
 	}
 
 /* ITEMLIST */
@@ -20,6 +20,7 @@
     margin-top: 0 !important;
     padding: 0 !important;
 	width:auto !important;
+	position: relative;
 }
 /** set custom itemlist and itemlist item styles **/
 #js_itemlist {
@@ -30,7 +31,7 @@
 	}
 
 #js_itemlist > li {
-	position: absolute;
+	position: relative;
 }
 
 #js_itemlist > li:not(.current) {
@@ -46,7 +47,6 @@
 	visibility: hidden;
 	opacity: 0;
 	transition: visibility 0s 2s, opacity 2s linear;
-	transform: translateX(80%);
 }
 
 #js_itemlist > li.prev-in {
@@ -58,7 +58,6 @@
 	visibility: hidden;
 	opacity: 0;
 	transition: visibility 0s 2s, opacity 2s linear;
-	transform: translateX(-80%);
 }
 
 /* CAROUSEL NAVIGATION */ 

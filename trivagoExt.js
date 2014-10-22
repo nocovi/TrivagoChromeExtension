@@ -31,23 +31,23 @@ $(function() {
 		observeOwnChanges: false,
 		queries: [{
         characterData: true
-    }]
+		}]
 	});
 	
+		
 	/* aux functions */
 	 function handleChanges (sumaries) {
-		//check if the list is being displayed
-		var listStyle = $('#js_itemlist').attr('style');
-		if (listStyle !== 'display:none;' && !$('#js_itemlist > li.current').hasClass('active')) {
-			$('#js_itemlist > li.current').removeClass('current');
-			currentIndex = 0;
-			$('#js_itemlist> li:eq(' + currentIndex + ')').addClass('current');
-		}
+	 //check if the list is being displayed
+	var listStyle = $('#js_itemlist').attr('style');
+	if (listStyle !== 'display:none;' && !$('#js_itemlist > li.current').hasClass('active')) {
+		$('#js_itemlist > li.current').removeClass('current');
+		$('#js_itemlist> li:eq(' + currentIndex + ')').addClass('current');
+	}
 	}
 	
 	//allows navigation between li search results 
 	function navigate() {
-    	//remove  css classes from items
+	   	//remove  css classes from items
 		$('#js_itemlist > li').removeAttr('style');
 		$('#js_itemlist > li.current').removeClass('current');
 		$('#js_itemlist > li.next-out').removeClass('next-out');
